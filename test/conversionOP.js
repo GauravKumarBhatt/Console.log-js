@@ -63,11 +63,11 @@ let str3 = str1 + str2
 
 let num1, num2, num3
 num1 = num2 = num3 = 10
-console.log(num1, num2, num3);
+// console.log(num1, num2, num3);
 
 let gameScore = 100
 ++gameScore;
-console.log(gameScore);
+// console.log(gameScore);
 
 // console.log("confusion with + operator");
 // console.log("1" + 2 + 2 + "2");
@@ -75,3 +75,37 @@ console.log(gameScore);
 // console.log(1 + 2 + "2" + 2 * 2);
 // console.log(1 + "2" + 2 + 2);
 // console.log("1" + "2" + 2 + 2);
+
+// console.log( (3 + 4) * 5 % 3);
+
+
+
+// **************************COMPARISON OPERATORS*****************************
+
+// console.log(2 > 1);
+// console.log(2 < 1);
+// console.log(2 >= 1);
+// console.log(2 <= 1);
+// console.log(2 != 1);
+
+console.log("2" > 1);
+console.log("02" > 1);
+
+console.log();
+
+console.log(null > 0);  // false
+console.log(null < 0);  // false   
+console.log(null == 0); // false
+console.log(null >= 0); // true
+
+console.log();
+
+console.log(undefined == 0); // false
+console.log(undefined > 0); // false
+console.log(undefined < 0); // false
+console.log(undefined >= 0); // false
+
+console.log();
+
+console.log("2" === 2); //false
+console.log("2" == 2); //true
