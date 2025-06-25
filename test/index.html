@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <label>Enter a number: </label>
+  <input type="number" id="numInput">
+  <button onclick="calculateFactorial()">Calculate Factorial</button>
+  <p id="result"></p>
+
+  <script>
+    function factorial(n) {
+      if (n === 0 || n === 1) return 1;
+      return n * factorial(n - 1);
+    }
+
+    function calculateFactorial() {
+      const num = parseInt(document.getElementById("numInput").value);
+      const result = factorial(num);
+      document.getElementById("result").innerText = "Factorial: " + result;
+    }
+  </script>
+</body>
+</html>
