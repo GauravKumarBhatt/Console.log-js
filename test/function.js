@@ -64,3 +64,65 @@ function returnSecondValue(getArray) {
 }
 console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000]));
+
+// Function Constructor
+// This is a way to create a function using the Function constructor
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+const user1 = new Person("Gaurav", 25);
+// console.log(user1);
+
+//anonymous function
+// setTimeout(function () {
+//   console.log("This runs after 2 seconds");
+// }, 2000);
+
+// callback function
+function processUserInput(callback) {
+  let name = "Gaurav";
+  callback(name);
+}
+
+processUserInput(function(name) {
+  console.log("Hello " + name);
+});
+
+
+// Recursive function to calculate factorial
+// A recursive function is a function that calls itself to solve a problem.
+// function factorial(n) {
+//   if (n == 0 || n == 1) {
+//     return 1;
+//   }
+//   return n * factorial(n - 1);
+// }
+// console.log(factorial(5)); // Output: 120
+
+
+// function sum(a, b) {
+//   return a + b; 
+// } 
+// console.log(sum(5, 10)); // Output: 15
+
+
+
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+function factorial(n) {
+  if (n === 0 || n === 1) return 1;
+  return n * factorial(n - 1);
+}
+
+rl.question("Enter a number: ", function(num) {
+  const result = factorial(parseInt(num));
+  console.log(`Factorial of ${num} is: ${result}`);
+  rl.close();
+});
