@@ -108,7 +108,7 @@ processUserInput(function(name) {
 
 
 
-
+// example of a recursive function to calculate factorial, input from user
 const readline = require("readline");
 
 const rl = readline.createInterface({
