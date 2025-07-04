@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom API Field Fetcher</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Custom API Field Fetcher</h2>
+
+    <label for="apiUrl">API URL:</label>
+    <input type="text" id="apiUrl" value="https://api.github.com/users/GauravKumarBhatt" />
+
+    <label for="fieldsInput">Enter field names (comma-separated):</label>
+    <textarea id="fieldsInput" placeholder="e.g. login, name, bio, html_url"></textarea>
+
+    <button id="fetchBtn">Fetch Data</button>
+
+    <div class="result" id="resultDisplay">
+      <!-- Fetched data will be shown here -->
+    </div>
+  </div>
+
+</body>
+<script src="api.js"></script>
+</html>
